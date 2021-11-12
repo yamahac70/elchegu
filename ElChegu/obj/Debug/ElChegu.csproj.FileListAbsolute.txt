@@ -1,0 +1,10 @@
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\bin\Debug\ElChegu.exe.config
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\bin\Debug\ElChegu.exe
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\bin\Debug\ElChegu.pdb
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.csprojResolveAssemblyReference.cache
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.inicio.resources
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.Properties.Resources.resources
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.csproj.GenerateResource.Cache
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.exe
+c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.pdb
+C:\Users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.frmIntegrantes.resources
