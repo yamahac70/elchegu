@@ -58,10 +58,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dgvlistado = new System.Windows.Forms.DataGridView();
-            this.dgvNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvIngredientes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -421,35 +417,10 @@
             // dgvlistado
             // 
             this.dgvlistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvlistado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvNombre,
-            this.dgvIngredientes,
-            this.dgvCantidad,
-            this.dgvPrecio});
             this.dgvlistado.Location = new System.Drawing.Point(101, 422);
             this.dgvlistado.Name = "dgvlistado";
             this.dgvlistado.Size = new System.Drawing.Size(449, 150);
             this.dgvlistado.TabIndex = 17;
-            // 
-            // dgvNombre
-            // 
-            this.dgvNombre.HeaderText = "Nombre";
-            this.dgvNombre.Name = "dgvNombre";
-            // 
-            // dgvIngredientes
-            // 
-            this.dgvIngredientes.HeaderText = "Ingredientes";
-            this.dgvIngredientes.Name = "dgvIngredientes";
-            // 
-            // dgvCantidad
-            // 
-            this.dgvCantidad.HeaderText = "Cantidad";
-            this.dgvCantidad.Name = "dgvCantidad";
-            // 
-            // dgvPrecio
-            // 
-            this.dgvPrecio.HeaderText = "Precio";
-            this.dgvPrecio.Name = "dgvPrecio";
             // 
             // button1
             // 
@@ -530,10 +501,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataGridView dgvlistado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvIngredientes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrecio;
         private System.Windows.Forms.Button button1;
     }
 }

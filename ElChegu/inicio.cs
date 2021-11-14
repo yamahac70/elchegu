@@ -53,7 +53,13 @@ namespace ElChegu
         //########################################################################################
         private void inicio_Load(object sender, EventArgs e)
         {
+            conexion con = new conexion();
+            con.abrir();
+            //con.trarDatos();
+            //dgvlistado = con.trarDatos();
+            dgvlistado.DataSource = con.trarDatos();
             int i = 1;
+            
             foreach (String a in productos)
             {
                 i++;
