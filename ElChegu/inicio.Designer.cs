@@ -57,7 +57,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dgvlistado = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -65,13 +64,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvlistado)).BeginInit();
             this.SuspendLayout();
             // 
             // cboProducto
             // 
             this.cboProducto.FormattingEnabled = true;
-            this.cboProducto.Location = new System.Drawing.Point(146, 154);
+            this.cboProducto.Location = new System.Drawing.Point(190, 117);
             this.cboProducto.Name = "cboProducto";
             this.cboProducto.Size = new System.Drawing.Size(121, 21);
             this.cboProducto.TabIndex = 1;
@@ -101,7 +99,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Location = new System.Drawing.Point(301, 154);
+            this.groupBox1.Location = new System.Drawing.Point(345, 117);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(236, 86);
             this.groupBox1.TabIndex = 5;
@@ -115,7 +113,7 @@
             this.groupBox3.Cursor = System.Windows.Forms.Cursors.Default;
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(301, 246);
+            this.groupBox3.Location = new System.Drawing.Point(345, 209);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(236, 86);
             this.groupBox3.TabIndex = 7;
@@ -158,7 +156,7 @@
             this.groupBox4.Controls.Add(this.checkMostaza);
             this.groupBox4.Controls.Add(this.checkMayonasa);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox4.Location = new System.Drawing.Point(74, 181);
+            this.groupBox4.Location = new System.Drawing.Point(118, 144);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(221, 156);
             this.groupBox4.TabIndex = 9;
@@ -330,16 +328,16 @@
             // lstChegu
             // 
             this.lstChegu.FormattingEnabled = true;
-            this.lstChegu.Location = new System.Drawing.Point(110, 360);
+            this.lstChegu.Location = new System.Drawing.Point(118, 323);
             this.lstChegu.Name = "lstChegu";
-            this.lstChegu.Size = new System.Drawing.Size(427, 56);
+            this.lstChegu.Size = new System.Drawing.Size(463, 238);
             this.lstChegu.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(172, 340);
+            this.label3.Location = new System.Drawing.Point(216, 303);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 13);
             this.label3.TabIndex = 10;
@@ -349,7 +347,7 @@
             // 
             this.LblPrecioParcial.AutoSize = true;
             this.LblPrecioParcial.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.LblPrecioParcial.Location = new System.Drawing.Point(247, 340);
+            this.LblPrecioParcial.Location = new System.Drawing.Point(291, 303);
             this.LblPrecioParcial.Name = "LblPrecioParcial";
             this.LblPrecioParcial.Size = new System.Drawing.Size(13, 13);
             this.LblPrecioParcial.TabIndex = 11;
@@ -414,14 +412,6 @@
             this.pictureBox3.TabIndex = 16;
             this.pictureBox3.TabStop = false;
             // 
-            // dgvlistado
-            // 
-            this.dgvlistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvlistado.Location = new System.Drawing.Point(101, 422);
-            this.dgvlistado.Name = "dgvlistado";
-            this.dgvlistado.Size = new System.Drawing.Size(449, 150);
-            this.dgvlistado.TabIndex = 17;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(583, 621);
@@ -430,6 +420,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "Ventas";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // inicio
             // 
@@ -440,7 +431,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(684, 661);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dgvlistado);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -465,7 +455,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvlistado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,7 +489,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.DataGridView dgvlistado;
         private System.Windows.Forms.Button button1;
     }
 }

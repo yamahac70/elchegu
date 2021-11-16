@@ -34,8 +34,10 @@ namespace ElChegu
         private Decimal SumPrecio;
         private Decimal prodcutoCosto;
         private Decimal ingeedientesCosto;
+        private conexion con;
         public inicio()
         {
+            con = new conexion();
             //Numerp que utilizo para 
             this.SumPrecio = 0;
             //el numero el cual uso para numero de pedido
@@ -53,11 +55,11 @@ namespace ElChegu
         //########################################################################################
         private void inicio_Load(object sender, EventArgs e)
         {
-            conexion con = new conexion();
-            con.abrir();
+            //conexion con = new conexion();
+            //con.abrir();
             //con.trarDatos();
             //dgvlistado = con.trarDatos();
-            dgvlistado.DataSource = con.trarDatos();
+            //dgvlistado.DataSource = con.trarDatos();
             int i = 1;
             
             foreach (String a in productos)
@@ -149,9 +151,14 @@ namespace ElChegu
                 lstChegu.Items.Add(NumeroItem + 1);
                 lstChegu.Items.Add("---------------------------------------");
                 NumeroItem = NumeroItem + 1;
+                //nuevo[i].nombre;
+                //nuevo[i].producto
+                //nuevo[i].ingredientesArr
+                //nuevo.count
+                //total
 
             }
-            
+
         }
         private void cboCantidad_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -173,6 +180,24 @@ namespace ElChegu
         private void btnCompltarCompra_Click(object sender, EventArgs e)
         {
             MessageBox.Show(Convert.ToString(total));
+            
+            //nuevo[i].nombre;
+            //nuevo[i].producto
+            //nuevo[i].ingredientesArr
+            //nuevo.count
+            //total
+            String pr="";
+            String ing = "";
+            for (int i = 0; i < nuevo.Count; i++)
+            {
+                pr += ","+nuevo[i].producto;
+                ing += "," + nuevo[i].ingredientesArr;
+            }
+            MessageBox.Show("Productos: "+pr);
+            MessageBox.Show("Ingredientes: "+ing);
+            MessageBox.Show("Precio total: "+total);
+            MessageBox.Show(Convert.ToString(nuevo.Count));
+            con.insertarDatos(nuevo[0].nombre,pr,ing,Convert.ToInt32(nuevo.Count),total);
         }
 
         private void integrantes_Click(object sender, EventArgs e)
@@ -182,6 +207,13 @@ namespace ElChegu
             //this.Hide();
             this.Hide();
             //Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmVentas ventas = new frmVentas();
+            ventas.Show();
+            this.Hide();
         }
     }
    

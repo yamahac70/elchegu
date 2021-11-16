@@ -8,3 +8,4 @@ c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElC
 c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.exe
 c:\users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.pdb
 C:\Users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.frmIntegrantes.resources
+C:\Users\mja\documents\visual studio 2015\Projects\ElChegu\ElChegu\obj\Debug\ElChegu.frmVentas.resources
